@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-import django_heroku
+import django_on_heroku
 import dj_database_url
 from decouple import config
 from dotenv import load_dotenv
@@ -47,13 +47,11 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'technologies.apps.TechnologiesConfig',
     'contacts.apps.ContactsConfig',
-    'cloudinary',
-    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -172,16 +170,16 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CONTACT_EMAIL = 'gabriel4amaizu@gmail.com'
-ADMIN_EMAILS = ['gabriel4amaizu@gmail.com', 'gabriel4amaizu@kumoh.ac.kr']
+# CONTACT_EMAIL = 'gabriel4amaizu@gmail.com'
+# ADMIN_EMAILS = ['gabriel4amaizu@gmail.com', 'gabriel4amaizu@kumoh.ac.kr']
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-DEFAULT_FROM_EMAIL = 'gabriel4amaizu@gmail.com'
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_API_KEY')
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# DEFAULT_FROM_EMAIL = 'gabriel4amaizu@gmail.com'
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'apikey'
+# EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_API_KEY')
 
 
-django_heroku.settings(locals())
+django_on_heroku.settings(locals())
