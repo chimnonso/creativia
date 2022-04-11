@@ -1,0 +1,1 @@
+web: gunicorn creativia.wsgi --log-file -
