@@ -1,0 +1,13 @@
+<!-- <div class="col"> -->
+    <div class="card zoom">
+        <img src="{{ tech.photo.url }}" alt="" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{ tech.title }}</h5>
+            <p class="card-text">{{ tech.short_description }} </p>
+            <hr class="hr">
+            <div class="text-center">
+                <span><a href="{% url 'technology:details' tech_id=tech.id %}">Read More&raquo;</a></span>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
