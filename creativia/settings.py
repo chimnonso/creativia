@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'technologies.apps.TechnologiesConfig',
     'contacts.apps.ContactsConfig',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -135,6 +137,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'hlnqkbvpg',
+    'API_KEY': '326995459655491',
+    'API_SECRET': 'Fm8Rq3ReGokWZtWMOsm9gchN2U4',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
