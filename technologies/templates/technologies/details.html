@@ -2,18 +2,18 @@
 {% load static %}
 {% load bootstrap5 %} tech-detail-page
 {% block content %}
-<div class="tech-detail-page bg-dark">
+<div class="tech-detail-page">
   <div class="page-banners d-flex justify-content-center align-items-center" style="background-image: url('{{ tech.photo.url }}');">
     <h3 class="red-color fs-1 fw-bolder">{{ tech.title }}</h3>
   </div>
   <div class="container">
     <!-- <h1 class="bg-dark p-5 text-white rounded-3">{{ tech.title }}</h1> -->
     <div class="row">
-        <div class="col-md-8 offset-md-2 text-light">
+        <div class="col-md-8 offset-md-2">
             <h3 class="my-3 red-color pt-5">Project Description</h3>
-            <p class="justify text-light">{{ tech.description }}</p>
+            <p class="justify">{{ tech.description }}</p>
             <p class="my-3 red-color">Project Details</p>            
-            <ul class="text-light">
+            <ul class="">
                 <li>Lorem ipsum dolor sit amet consectetur.</li>
                 <li>Voluptatum tempore quas dolor maxime sed!</li>
                 <li>Modi repellendus alias saepe repudiandae architecto!</li>
@@ -30,7 +30,7 @@
     
 
     <div class="row">
-      <h3 class="my-4 bold text-light pt-5">Related Projects</h3>
+      <h3 class="my-4 bold pt-5">Related Projects</h3>
         {% for related in related_techs %}
         <div class="col-md-3 col-sm-6 mb-4">
             <a href="{% url 'technology:details' related.id %}">
@@ -47,8 +47,8 @@
         {% endfor %}
 
         <div class="col-sm-6 col-md-6">
-          <div class="card bg-dark">
-            <div class="card-header text-light text-center">
+          <div class="card text-dark bg-light">
+            <div class="card-header text-center">
               <h4>Request Technology</h4>
             </div>
             <div class="card-body pt-5 text-center">

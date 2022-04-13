@@ -35,7 +35,7 @@ class TechRequest(models.Model):
     first_name = models.CharField("First Name", max_length=100)
     last_name = models.CharField("Last Name", max_length=100)
     company_name = models.CharField("Company Name", max_length=100)
-    message = models.TextField("Message", default="I would like to request for this technology")
+    message = models.TextField("Message", default="I would like to request this technology")
     tech_title = models.CharField("Technology Title", max_length=100)
     request_date = models.DateTimeField("Request Date", default=timezone.now)
 
