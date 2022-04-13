@@ -1,0 +1,38 @@
+<section class="container about mt-5 pt-sm-5 slideanim">
+    <div class="row gx-sm-5">
+        <div class="col-md-5 d-none d-sm-block">
+            <div class="card" style="height: 100%;">
+                <img src="/static/img/03.png" class="img-card-top" style="height: inherit;" alt="">
+            </div>
+        </div>
+        <div class="col-md-7 py-5">
+            <h2 class="header-text">About Us</h2>
+            <h5 class="justify">Creativia is an IT convergence firm. Using technological tools, we work together to design, build, and create the solution to your problem. We specialize in innovative research that involves the building and development of smart energy grids, smart homes, smart factories, and fine tuning additive manufacturing processes. Our team incorporates operations, technology, and marketing skills, with which we ensure to assist clients in handling new projects.
+            </h5>
+            <div class="d-sm-flex pt-3 text-center text-sm-start">
+                <span class="me-3 rounded-circle p-3 d-none d-sm-block" style="width:80px;height:80px;"><i class="fa-solid fa-bullseye fa-3x"></i></span>
+                <div class="ps-sm-4">
+                    <h5 class="text-capitalize">Our Goal</h5>
+                    <p class="justify">We hope to be able to offer unique solutions to countries all over the globe. At all times, we are committed to exceeding the expectations of our clients by providing solutions that solve problems from the grass root up.</p>
+                    <!-- <hr> -->
+                </div>
+            </div>
+            <div class="d-sm-flex pt-3">
+                <span class="me-3 rounded-circle p-3 d-none d-sm-block" style="width:80px;height:80px;"><i class="fas fa-brain fa-3x"></i></span>
+                <div class="ps-sm-4">
+                    <h5 class="text-capitalize">Our Vision</h5>
+                    <p class="justify">Our vision is to be a leading platform and center for next-generation research and development in the metaverse. We want to be judged as such by our clients, employees, shareholders, and even the communities we work with.</p>
+                    <!-- <hr> -->
+                </div>
+            </div>
+            <!-- <div class="d-sm-flex pt-3 text-center text-sm-start">
+                <span class="me-3 rounded-circle p-3" style="width:80px;height:80px;"><i class="fas fa-people-carry fa-3x" style="margin-left:-5px;"></i></span>
+                <div class="ps-sm-4">
+                    <h5 class="text-capitalize">technical support</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloremque quidem eaque dignissimos numquam nobis esse id pariatur, aliquam mollitia.</p>
+                    
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>

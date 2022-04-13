@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from technologies.models import Technology
+from contacts.forms import ContactForm
 
 # Create your views here.
 
@@ -11,3 +12,4 @@ def index(request):
     }
 
     return render(request, 'core/index.html', context)
+

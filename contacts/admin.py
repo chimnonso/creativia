@@ -4,14 +4,14 @@ from .models import Contact, Event, TechRequest
 
 
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'subject')
-    list_display_links = ('name', 'email', 'subject')
-    list_filter = ('name',)
+    list_display = ('first_name', 'last_name', 'email', 'contact_date')
+    list_display_links = ('first_name', 'last_name', 'email', 'contact_date')
+    list_filter = ('first_name', 'last_name', 'contact_date')
 
 
 class EventAdmin(admin.ModelAdmin):
-    list_display = ('first_name', 'email', 'company_name', 'subject')
-    list_display_links = ('first_name', 'email', 'subject')
+    list_display = ('first_name', 'email', 'company_name')
+    list_display_links = ('first_name', 'email')
     list_filter = ('first_name',)
 
 admin.site.register(Contact, ContactAdmin)

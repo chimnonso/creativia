@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block content %}
+{% bootstrap_form_errors event_form type='fields' %}
+<div class="event-page bg-dark">
+    <div class="event-header page-banners d-flex justify-content-center align-items-center">
+        <a href="#eventform" class="btn btn-outline-primary call-2-action">Register</a>
+    </div>
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-sm-12">
+                <img src="/static/img/meta.jpg" alt="" class="img-fluid">
+            </div>
+        </div> -->
+        <div class="row pt-5">
+            <div class="col-md-8 offset-md-2 text-light">
+                <h2 class="red-color">Workshop on Metaverse and Intelligent Transportation</h2>
+                <p class="text-light justify">Metaverse refers to a digitally simulated environment that is connected to the physical environment. Africa and indeed Nigeria is amongst the top users of online platforms. Thus, research into the applicability, technologies, and possible challenges of metaverse platform deployment in Africa is apt currently. The rising population in African countries (Nigeria inclusive) demands a planned and tech-based transportation systems to ease the movement of human and resources. The Nigerian government has taken several initiatives in enhancing the transportation sector especially the rail transportation system recently. </p>
+                <ul class="text-start">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, impedit!</li>
+                    <li>Eligendi dolores impedit quis! Minima non delectus fuga magni neque!</li>
+                    <li>Maiores, alias nisi? Nihil quod blanditiis odit error minima molestiae.</li>
+                </ul>
+                <ul class="list-unstyled text-start d-md-none">
+                    <li class="mb-2"><i class="fa-solid fa-location-pin fa-2x"></i> <span class="ms-2">Eko Hotels & Suites Lagos</span></li>
+                    <li class="mb-2"><i class="fa-solid fa-calendar-days fa-2x"></i> <span class="ms-2">20/07/2022</span></li>
+                    <li class="mb-2"><i class="fa-solid fa-clock fa-2x"></i> <span class="ms-2">03:00 EST</span></li>
+                </ul>
+                <div class=" d-none d-md-block">
+                    <div class="d-flex justify-content-between">
+                        <p><span><i class="fa-solid fa-location-pin fa-2x"></i></span> Eko Hotels & Suites Lagos</p>
+                        <p><span><i class="fa-solid fa-calendar-days fa-2x"></i></span> 20/07/2022</p>
+                        <p><span><i class="fa-solid fa-clock fa-2x"></i></span> 03:00 EST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <h4 class="text-center mb-5 text-light">Meet the Presenters</h4>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-0 shadow">
+                <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Team Member</h5>
+                  <div class="card-text text-black-50">Web Developer</div>
+                </div>
+              </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-0 shadow">
+                <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Team Member</h5>
+                  <div class="card-text text-black-50">Web Developer</div>
+                </div>
+              </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-0 shadow">
+                <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Team Member</h5>
+                  <div class="card-text text-black-50">Web Developer</div>
+                </div>
+              </div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-0 shadow">
+                <img src="https://source.unsplash.com/7u5mwbu7qLg/500x350" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Team Member</h5>
+                  <div class="card-text text-black-50">Web Developer</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row slideanim" id="eventform">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="card bg-dark">
+                    <div class="card-body py-5 text-center">
+                        
+                        <form action="{% url 'contact:event' %}" method="post" novalidate>
+                            {% csrf_token %}
+                            <div class="row mb-4">
+                                <div class="col-6">
+                                    {% bootstrap_field event_form.first_name show_label=False size='large' %}
+                                </div>
+                                <div class="col-6">
+                                    {% bootstrap_field event_form.last_name show_label=False size='large' %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    {% bootstrap_field event_form.company_name show_label=False size='large' %}
+                                </div>
+                                <div class="col-6">
+                                    {% bootstrap_field event_form.email show_label=False size='large' %}
+                                </div>
+                            </div>
+                            
+                            <input type="submit" value="Register" class="btn btn-primary text-center call-2-action">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock %}

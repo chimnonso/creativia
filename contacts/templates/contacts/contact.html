@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block content %}
+<div class="contact-container">
+    <div class="container contactpage-div">
+        <div class="row">
+            <div class="d-flex justify-content-center pt-5 mt-5 text-center">
+                <div class="col- text-light">
+                    <h2>Get in touch</h2>
+                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit distinctio nisi nam, quas incidunt laborum aliquid sint!</h5>
+                    <p>Enter your information and a member of our team will contact you shortly.</p>
+                    <div class="card bg-dark">
+                        <div class="card-body pt-5">
+                            
+                            <form action="{% url 'contact:contact' %}" method="post" novalidate>
+                                {% csrf_token %}
+                                <div class="row mb-4">
+                                    <div class="col-6">
+                                        <!-- <input type="text" class="form-control" placeholder="First Name" aria-label="Name" name="first_name" id="first_name"> -->
+                                        {% bootstrap_field contact_form.first_name show_label=False size='large' %}
+                                    </div>
+                                    <div class="col-6">
+                                        <!-- <input type="text" name="last_name" id="email" class="form-control" placeholder="Last Name"> -->
+                                        {% bootstrap_field contact_form.last_name show_label=False size='large' %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-6">
+                                        <!-- <input type="text" class="form-control" placeholder="First Name" aria-label="Name" name="first_name" id="first_name"> -->
+                                        {% bootstrap_field contact_form.company_name show_label=False size='large' %}
+                                    </div>
+                                    <div class="col-6">
+                                        <!-- <input type="text" name="email" id="email" class="form-control" placeholder="Email"> -->
+                                        {% bootstrap_field contact_form.email show_label=False size='large' %}
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <!-- <textarea name="message" id="message" rows="5" placeholder="Message" class="form-control"></textarea> -->
+                                        {% bootstrap_field contact_form.message show_label=False size='large' %}
+                                    </div>
+                                </div>
+                                <input type="submit" value="Send Message" class="btn btn-primary text-center call-2-action">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock %}
