@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'contacts.apps.ContactsConfig',
     'cloudinary',
     'cloudinary_storage',
+    'django_better_admin_arrayfield',
 ]
 
 MIDDLEWARE = [

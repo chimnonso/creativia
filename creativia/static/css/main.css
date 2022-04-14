@@ -308,7 +308,7 @@ input, select, textarea {
 .event-header {
     background-image: url('/static/img/meta.jpg');
 }
-/* 
-.event-page {
-    background-color: #212529;
-} */
+
+.just_name {
+    background-image: -webkit-gradient(linear, left top, right top, from(#1d2e263d), to(#242021));
+}
