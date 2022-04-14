@@ -237,7 +237,14 @@ input, select, textarea {
 
 
 .bg-image {
-    background-image: url('/static/img/05.png');
+    background-image: url('/static/img/meta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-image {
+    background-image: url('/static/img/03.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
