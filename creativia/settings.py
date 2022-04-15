@@ -14,9 +14,13 @@ import os
 from pathlib import Path
 import django_on_heroku
 import dj_database_url
-from decouple import config
-from dotenv import load_dotenv
-load_dotenv()
+import environ
+# from decouple import config
+# from dotenv import load_dotenv
+# load_dotenv()
+
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -111,9 +115,9 @@ WSGI_APPLICATION = 'creativia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'creativia',
-        'USER': 'creativia_user',
-        'PASSWORD': 'foobar',
+        'NAME': os.environ.get('DBNAME'),
+        'USER': os.environ.get('DBUSER'),
+        'PASSWORD': os.environ.get('DBPASSWORD'),
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -140,9 +144,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'hlnqkbvpg',
-    'API_KEY': '326995459655491',
-    'API_SECRET': 'Fm8Rq3ReGokWZtWMOsm9gchN2U4',
+    'CLOUD_NAME': env('CLOUD_NAME'),
+    'API_KEY': env('API_KEY'),
+    'API_SECRET': env('API_SECRET'),
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
@@ -151,7 +155,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -180,11 +184,11 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# CONTACT_EMAIL = 'gabriel4amaizu@gmail.com'
-# ADMIN_EMAILS = ['gabriel4amaizu@gmail.com', 'gabriel4amaizu@kumoh.ac.kr']
+# CONTACT_EMAIL = ''
+# ADMIN_EMAILS = ['', '']
 
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# DEFAULT_FROM_EMAIL = 'gabriel4amaizu@gmail.com'
+# DEFAULT_FROM_EMAIL = ''
 # EMAIL_HOST = 'smtp.sendgrid.net'
 # EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
