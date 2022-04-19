@@ -2,9 +2,14 @@
 {% load bootstrap5 %}
 {% block content %}
 {% bootstrap_form_errors event_form type='fields' %}
-<div class="event-page bg-dark">
-    <div class="event-header page-banners d-flex justify-content-center align-items-center">
+<div class="event-page">
+    <!-- <div class="event-header d-flex justify-content-center align-items-center"> -->
+    <div class="event-header">
+      <div class="py-5">
+        <h1 class="text-light px-sm-5 mx-sm-5">Workshop on Metaverse and Intelligent Transportation</h1>
         <a href="#eventform" class="btn btn-outline-primary call-2-action">Register</a>
+      </div>
+        
     </div>
     <div class="container">
         <!-- <div class="row">
@@ -13,9 +18,12 @@
             </div>
         </div> -->
         <div class="row pt-5">
-            <div class="col-md-8 offset-md-2 text-light">
-                <h2 class="red-color">Workshop on Metaverse and Intelligent Transportation</h2>
-                <p class="text-light justify">Metaverse refers to a digitally simulated environment that is connected to the physical environment. It is now trending both to the industry and academic stakeholders. Similarly, intelligent transportation has continued to attract attention in the quest for safety, traffic management and management of greenhouse fossil fuel emission. Although, metaverse is at the infant stage, many stakeholders believe that its acceptance will be a function of issues such as applicability to various sectors, supporting technologies, interoperability, and open platform for continuous content generation. This workshop is intended to accelerate research discussion and trigger collaboration. It will also witness the demonstration of the creativia metaverse platform. Africa and indeed Nigeria have the combined comparative advantage of population, land size and active users of various online platforms. It is therefore imperative that research into the applicability, technologies, acceptance, and possible challenges of metaverse platform deployment in Africa be conducted. Creativia and various institutions in Nigeria will be leading the research in this direction. </p>
+            <div class="col-md-8 offset-md-2">
+                <!-- <h2 class="red-color">Workshop on Metaverse and Intelligent Transportation</h2> -->
+                <p class="text-dark justify">Metaverse refers to a digitally simulated environment that is connected to the physical environment. It is now trending both to the industry and academic stakeholders. Similarly, intelligent transportation has continued to attract attention in the quest for safety, traffic management and management of greenhouse fossil fuel emission. Although, metaverse is at the infant stage, many stakeholders believe that its acceptance will be a function of issues such as applicability to various sectors, supporting technologies, interoperability, and open platform for continuous content generation. This workshop is intended to accelerate research discussion and trigger collaboration. It will also witness the demonstration of the creativia metaverse platform. Africa and indeed Nigeria have the combined comparative advantage of population, land size and active users of various online platforms. It is therefore imperative that research into the applicability, technologies, acceptance, and possible challenges of metaverse platform deployment in Africa be conducted. Creativia and various institutions in Nigeria will be leading the research in this direction. </p>
+
+                <h2>Topics to be discussed</h2>
+                <p>In this workshop, the following topics will be covered</p>
                 <ul class="text-start">
                     <li>Background on Metaverse and Research Prospects in AI.</li>
                     <li>“Pure Wallet”: An offline approach to Blockchain transaction.</li>
@@ -25,7 +33,7 @@
                     <li>Metaverse Applicability to Manufacturing</li>
                 </ul>
                 <ul class="list-unstyled text-start d-md-none">
-                    <li class="mb-2"><i class="fa-solid fa-location-pin fa-2x"></i> <span class="ms-2">Kumoh National Institute of Technology</span></li>
+                    <li class="mb-2"><i class="fa-solid fa-location-pin fa-2x"></i> <span class="ms-2"> Kumoh National Institute of Technology</span></li>
                     <li class="mb-2"><i class="fa-solid fa-calendar-days fa-2x"></i> <span class="ms-2">27/05/2022</span></li>
                     <li class="mb-2"><i class="fa-solid fa-clock fa-2x"></i> <span class="ms-2">03:00 KST</span></li>
                 </ul>
@@ -36,90 +44,58 @@
                         <p><span><i class="fa-solid fa-clock fa-2x"></i></span> 03:00 KST</p>
                     </div>
                 </div>
+                <div class="row mt-5 text-center">
+                  <h2>Meet the Presenters</h2>
+                  <div class="col-sm-4">
+                    <img src="/static/img/gab.jpg" class=" speaker" alt="">
+                    <h5 class="py-3">Gabriel Amaizu</h5>
+                  </div>
+                  <div class="col-sm-4">
+                    <img src="/static/img/cos1.png" class=" speaker" alt="">
+                    <h5 class="py-3">Gabriel Amaizu</h5>
+                  </div>
+                  <div class="col-sm-4">
+                    <img src="/static/img/judith.jpg" class=" speaker" alt="">
+                    <h5 class="py-3">Gabriel Amaizu</h5>
+                  </div>
+                </div>
             </div>
         </div>
-        <div class="row pt-5">
-            <h4 class="text-center mb-5 text-light">Meet the Presenters</h4>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-0 shadow">
-                <img src="/static/img/gab.jpg" class="card-img-top" alt="..." style="max-height: 306px;">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-0">Gabriel Amaizu</h5>
-                  <!-- <div class="card-text text-black-50">Web Developer</div> -->
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 2 -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-0 shadow">
-                <img src="/static/img/cos1.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-0">Team Member</h5>
-                  <!-- <div class="card-text text-black-50">Web Developer</div> -->
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 3 -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-0 shadow">
-                <img src="/static/img/judith1.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-0">Team Member</h5>
-                  <!-- <div class="card-text text-black-50">Web Developer</div> -->
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 4 -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-0 shadow">
-                <img src="/static/img/pastor1.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-0">Team Member</h5>
-                  <!-- <div class="card-text text-black-50">Web Developer</div> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-0 shadow">
-                <img src="/static/img/saviour.jpg" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-0">Team Member</h5>
-                  <!-- <div class="card-text text-black-50">Web Developer</div> -->
-                </div>
-              </div>
-            </div>
-            
-        </div>
-        <div class="row slideanim" id="eventform">
-            <div class="col-sm-6 offset-sm-3">
-                <div class="card bg-dark">
-                    <div class="card-body py-5 text-center">
+        
+        
+        
+    </div>
+    <div class="container-fluid bg-dark mt-5">
+      <div class="row slideanim" id="eventform">
+        <div class="col-sm-6 offset-sm-3">
+            <div class="card bg-dark">
+                <div class="card-body py-5 text-center">
+                    
+                    <form action="{% url 'contact:event' %}" method="post" novalidate>
+                        {% csrf_token %}
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                {% bootstrap_field event_form.first_name show_label=False size='large' %}
+                            </div>
+                            <div class="col-6">
+                                {% bootstrap_field event_form.last_name show_label=False size='large' %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                {% bootstrap_field event_form.company_name show_label=False size='large' %}
+                            </div>
+                            <div class="col-6">
+                                {% bootstrap_field event_form.email show_label=False size='large' %}
+                            </div>
+                        </div>
                         
-                        <form action="{% url 'contact:event' %}" method="post" novalidate>
-                            {% csrf_token %}
-                            <div class="row mb-4">
-                                <div class="col-6">
-                                    {% bootstrap_field event_form.first_name show_label=False size='large' %}
-                                </div>
-                                <div class="col-6">
-                                    {% bootstrap_field event_form.last_name show_label=False size='large' %}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    {% bootstrap_field event_form.company_name show_label=False size='large' %}
-                                </div>
-                                <div class="col-6">
-                                    {% bootstrap_field event_form.email show_label=False size='large' %}
-                                </div>
-                            </div>
-                            
-                            <input type="submit" value="Register" class="btn btn-primary text-center call-2-action">
-                        </form>
-                    </div>
+                        <input type="submit" value="Register" class="btn btn-primary text-center call-2-action">
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>
 {%endblock %}

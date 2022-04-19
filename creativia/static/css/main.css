@@ -305,10 +305,43 @@ input, select, textarea {
     height: 60vh;
 }
 
+
+.event-banners {
+    background-attachment: fixed;
+    background-position: repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .event-header {
-    background-image: url('/static/img/meta.jpg');
+    background-image: url('/static/img/meta_trans.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    line-height: 1.2;
+}
+
+.event-header h1 {
+    font-size: 450%;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.event-header > div {
+    background-color: rgba(1,1,1,.5);
 }
 
 .just_name {
     background-image: -webkit-gradient(linear, left top, right top, from(#1d2e263d), to(#242021));
+}
+
+img.speaker {
+    border-radius: 50%;
+    height: 250px;
 }
