@@ -220,6 +220,11 @@ header .overlay,
     background-image: url('/static/img/11.png');
 }
 
+.contact-card>form .form-control, 
+.contact-card>form .form-control:focus {
+    background-color: #fff;
+}
+
 .form-control, 
 .form-control:focus {
     background-color: #212529;
@@ -230,6 +235,11 @@ header .overlay,
     line-height: 1.2;
     font-size: 40px;
 }
+
+.contact-card>form input, .contact-card>form select,  .contact-card>formtextarea {
+    color: #111 !important;
+}
+
 
 input, select, textarea {
     color: #fff !important;
@@ -343,5 +353,11 @@ input, select, textarea {
 
 img.speaker {
     border-radius: 50%;
-    height: 250px;
+    height: 265px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.style-icons i {
+    color: green;
 }

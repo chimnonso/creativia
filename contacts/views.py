@@ -59,8 +59,9 @@ def event(request):
 
         else:
             print(event_form.errors)
-            messages.add_message(request, messages.ERROR, 'Form not properly filled. Scroll down for error messages')
-            # return redirect(reverse('contact:event') + '#eventform')
+            # messages.add_message(request, messages.ERROR, 'Form not properly filled. Scroll down for error messages')
+            # # return redirect(reverse('contact:event'))
+            
 
     context = {
         'event_form': event_form
