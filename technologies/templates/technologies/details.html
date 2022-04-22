@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load bootstrap5 %} tech-detail-page
+{% load bootstrap5 %}
+{% block title %}
+    <title>Technology Details | Creativia</title>
+{% endblock %}
 {% block content %}
 <div class="tech-detail-page">
   <div class="page-banners d-flex justify-content-center align-items-center" style="background-image: url('{{ tech.photo.url }}');">

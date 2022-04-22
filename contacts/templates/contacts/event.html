@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% load bootstrap5 %}
+
+{% block title %}
+    <title>Event | Creativia</title>
+{% endblock %}
 {% block content %}
 {% bootstrap_form_errors event_form type='fields' %}
 <div class="event-page">
