@@ -338,9 +338,20 @@ input, select, textarea {
 }
 
 .event-header h1 {
-    font-size: 450%;
     font-weight: bolder;
     text-transform: uppercase;
+}
+
+@media(min-width: 1000px) {
+    .event-header h1 {
+        font-size: 450%;
+    }
+}
+
+@media(max-width: 382) {
+    .event-header h1 {
+        font-size: 200%;
+    }
 }
 
 .event-header > div {
