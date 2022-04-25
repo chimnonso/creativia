@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'technologies.apps.TechnologiesConfig',
     'contacts.apps.ContactsConfig',
+    'events.apps.EventsConfig',
     'cloudinary',
     'cloudinary_storage',
     'django_better_admin_arrayfield',

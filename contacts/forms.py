@@ -1,5 +1,5 @@
 from django.forms import ModelForm, ValidationError, CharField, EmailField, Textarea
-from .models import Contact, Event, TechRequest
+from .models import Contact, TechRequest
 
 class ContactForm(ModelForm):
     # first_name = CharField(label='')
@@ -24,11 +24,6 @@ class ContactForm(ModelForm):
     #         self.add_error('name', msg)
     #         raise ValidationError(msg)
 
-
-class EventForm(ModelForm):
-    class Meta:
-        model = Event
-        exclude = ['contact_date']
 
 class TechRequestForm(ModelForm):
     class Meta:

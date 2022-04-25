@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse, reverse
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail
-from .forms import ContactForm, EventForm, TechRequestForm
+from .forms import ContactForm, TechRequestForm
 
 import os
 # Create your views here.
@@ -45,29 +45,29 @@ def contact(request):
     }
     return render(request, 'contacts/contact.html', context)
 
-def event(request):
+# def event(request):
 
-    event_form = EventForm()
+#     event_form = EventForm()
 
-    if request.method=='POST':
+#     if request.method=='POST':
 
-        event_form = EventForm(request.POST)
-        if event_form.is_valid():
-            event_form.save()
-            messages.add_message(request, messages.SUCCESS, 'Event Registration Completed Successfully')
-            return redirect('index')
+#         event_form = EventForm(request.POST)
+#         if event_form.is_valid():
+#             event_form.save()
+#             messages.add_message(request, messages.SUCCESS, 'Event Registration Completed Successfully')
+#             return redirect('index')
 
-        else:
-            print(event_form.errors)
-            messages.add_message(request, messages.ERROR, 'Form not properly filled. Scroll down for error messages')
-            # # return redirect(reverse('contact:event'))
+#         else:
+#             print(event_form.errors)
+#             messages.add_message(request, messages.ERROR, 'Form not properly filled. Scroll down for error messages')
+#             # # return redirect(reverse('contact:event'))
             
 
-    context = {
-        'event_form': event_form
-    }
+#     context = {
+#         'event_form': event_form
+#     }
 
-    return render(request, 'contacts/event.html', context)
+#     return render(request, 'contacts/event.html', context)
 
 
 def tech_request(request):
