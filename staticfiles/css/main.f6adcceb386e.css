@@ -107,7 +107,7 @@ header .overlay,
   
 @media (pointer: coarse) and (hover: none) {
     header {
-      background: url('/static/img/02.png') black no-repeat center center scroll;
+      background: url("/static/img/02.1211ffb47b97.png") black no-repeat center center scroll;
     }
   
     header video {
@@ -217,7 +217,7 @@ header .overlay,
 .contact-container {
     height: 100%;
     width: 100%;
-    background-image: url('/static/img/11.png');
+    background-image: url("/static/img/11.58cbcf6a07e8.png");
 }
 
 .contact-card>form .form-control, 
@@ -247,21 +247,21 @@ input, select, textarea {
 
 
 .bg-image {
-    background-image: url('/static/img/meta.jpg');
+    background-image: url("/static/img/meta.d31c4bcc93d6.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .about-image {
-    background-image: url('/static/img/03.png');
+    background-image: url("/static/img/03.2da350d6c6d0.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .parallax {
-    background-image: url('/static/img/07.png');
+    background-image: url("/static/img/07.17604f79477d.png");
     height: 100%;
     background-attachment: fixed;
     background-position: repeat;
@@ -324,7 +324,7 @@ input, select, textarea {
 }
 
 .event-header {
-    background-image: url('/static/img/meta_trans.png');
+    background-image: url("/static/img/meta_trans.ce621bc57a32.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
