@@ -22,9 +22,9 @@
                 {% endfor %}
             </ul>  
             <div class="buttons text-center ">
-                <button class="btn btn-primary">Demo Video</button>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Request Technology</button>
-                <!-- <button class="btn btn-outline-primary">Request</button> -->
+                <!-- <button class="btn btn-primary">Demo Video</button> -->
+                <!-- <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Request Technology</button> -->
+                <a href="#request" class="btn btn-outline-primary">Request Technology</a>
             </div>
         </div>
     </div>
@@ -50,8 +50,8 @@
         </div>
         {% endfor %}
 
-        <div class="col-sm-6 col-md-6">
-          <div class="card text-light bg-dark">
+        <div class="col-sm-6 col-md-6" id="request">
+          <div class="card">
             <div class="card-header text-center">
               <h4>Request Technology</h4>
             </div>
@@ -86,7 +86,7 @@
                             {% bootstrap_field tech_request_form.message show_label=False size='large' %}
                         </div>
                     </div>
-                    <input type="submit" value="Send Message" class="btn btn-primary text-center call-2-action">
+                    <input type="submit" value="Request" class="btn btn-primary text-center call-2-action">
                 </form>
             </div>
         </div>

@@ -217,10 +217,10 @@ header .overlay,
 .contact-container {
     height: 100%;
     width: 100%;
-    background-image: url('/static/img/11.png');
+    /* background-image: url('/static/img/11.png'); */
 }
 
-.contact-card>form .form-control, 
+/* .contact-card>form .form-control, 
 .contact-card>form .form-control:focus {
     background-color: #fff;
 }
@@ -228,7 +228,7 @@ header .overlay,
 .form-control, 
 .form-control:focus {
     background-color: #212529;
-}
+} */
 .contact h3 {
     font-weight: 400;
     letter-spacing: normal;
@@ -236,18 +236,18 @@ header .overlay,
     font-size: 40px;
 }
 
-.contact-card>form input, .contact-card>form select,  .contact-card>formtextarea {
+/* .contact-card>form input, .contact-card>form select,  .contact-card>formtextarea {
     color: #111 !important;
 }
 
 
 input, select, textarea {
     color: #fff !important;
-}
+} */
 
 
 .bg-image {
-    background-image: url('/static/img/meta.jpg');
+    background-image: url('/static/img/meta_trans.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
