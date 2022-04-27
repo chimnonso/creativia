@@ -56,14 +56,15 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'bootstrap5',
     'core.apps.CoreConfig',
     'technologies.apps.TechnologiesConfig',
     'contacts.apps.ContactsConfig',
     'events.apps.EventsConfig',
-    'cloudinary',
-    'cloudinary_storage',
+    
     'django_better_admin_arrayfield',
 ]
 
