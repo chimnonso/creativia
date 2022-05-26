@@ -5,6 +5,7 @@ from .models import Event
 from django.conf import settings
 import mimetypes
 from django.http.response import HttpResponse
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def event(request):
@@ -31,7 +32,7 @@ def event(request):
 
     return render(request, 'events/event.html', context)
 
-
+@login_required
 def download_file(request):
     events = Event.objects.all()
     BASE_DIR = settings.BASE_DIR
