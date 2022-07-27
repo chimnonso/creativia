@@ -16,8 +16,6 @@ import django_on_heroku
 import dj_database_url
 import environ
 
-import mimetypes
-mimetypes.add_type("text/css", ".css", True)
 # from decouple import config
 # from dotenv import load_dotenv
 # load_dotenv()
@@ -45,11 +43,8 @@ ALLOWED_HOSTS = [
     'kreativia.herokuapp.com',
     'creativia.tech',
     '127.0.0.1',
-    '127.0.0.1:11211',
 ]
 
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
 
 
 # Application definition
@@ -69,7 +64,6 @@ INSTALLED_APPS = [
     'cloudinary',
     'cloudinary_storage',
     'django_better_admin_arrayfield',
-    'compressor',
 ]
 
 MIDDLEWARE = [
@@ -148,33 +142,6 @@ CLOUDINARY_STORAGE = {
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211',
-    }
-}
-
-STATICFILES_FINDERS = (
-    'compressor.finders.CompressorFinder',
-)
-
-# COMPRESS_ENABLED = True
-COMPRESS_ENABLED = not DEBUG
-COMPRESS_CSS_HASHING_METHOD = 'content'
-COMPRESS_FILTERS = {
-    'css':[
-        'compressor.filters.css_default.CssAbsoluteFilter',
-        'compressor.filters.cssmin.rCSSMinFilter',
-    ],
-    'js':[
-        'compressor.filters.jsmin.JSMinFilter',
-    ]
-}
-HTML_MINIFY = True
-KEEP_COMMENTS_ON_MINIFYING = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
