@@ -44,7 +44,8 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 ALLOWED_HOSTS = [
     'kreativia.herokuapp.com',
     'creativia.tech',
-    '127.0.0.1'
+    '127.0.0.1',
+    '127.0.0.1:11211',
 ]
 
 # SESSION_COOKIE_SECURE = True
