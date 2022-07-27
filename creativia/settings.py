@@ -157,7 +157,8 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 )
 
-COMPRESS_ENABLED = True
+# COMPRESS_ENABLED = True
+COMPRESS_ENABLED = not DEBUG
 COMPRESS_CSS_HASHING_METHOD = 'content'
 COMPRESS_FILTERS = {
     'css':[
