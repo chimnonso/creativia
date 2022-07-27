@@ -10,7 +10,6 @@ django-appconf==1.0.5
 django-better-admin-arrayfield==1.4.2
 django-bootstrap-v5==1.0.11
 django-cloudinary-storage==0.3.0
-django-compressor==4.0
 django-environ==0.8.1
 django-htmlmin==0.11.0
 django-on-heroku==1.1.2
