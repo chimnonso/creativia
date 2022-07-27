@@ -15,6 +15,9 @@ from pathlib import Path
 import django_on_heroku
 import dj_database_url
 import environ
+
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
 # from decouple import config
 # from dotenv import load_dotenv
 # load_dotenv()
