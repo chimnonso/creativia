@@ -62,8 +62,7 @@ h3.bold {font-weight: 900;}
 
 header {
     position: relative;
-    /* background-color: black; */
-    background-image: linear-gradient(to left, #111, #FE0000);
+    background-color: black;
     height: 100vh;
     min-height: 25rem;
     width: 100%;
