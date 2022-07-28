@@ -107,7 +107,7 @@ header .overlay,
   
 @media (pointer: coarse) and (hover: none) {
     header {
-      background: url('/static/img/02.png') black no-repeat center center scroll;
+      background: url("/static/img/02.1211ffb47b97.png") black no-repeat center center scroll;
     }
   
     header video {
@@ -246,21 +246,21 @@ input, select, textarea {
 
 
 .bg-image {
-    background-image: url('/static/img/meta_trans.png');
+    background-image: url("/static/img/meta_trans.ce621bc57a32.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .about-image {
-    background-image: url('/static/img/03.png');
+    background-image: url("/static/img/03.2da350d6c6d0.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .parallax {
-    background-image: url('/static/img/07.png');
+    background-image: url("/static/img/07.17604f79477d.png");
     height: 100%;
     background-attachment: fixed;
     background-position: repeat;
@@ -323,7 +323,7 @@ input, select, textarea {
 }
 
 .event-header {
-    background-image: url('/static/img/meta_trans.png');
+    background-image: url("/static/img/meta_trans.ce621bc57a32.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
