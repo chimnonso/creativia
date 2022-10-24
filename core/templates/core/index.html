@@ -1,51 +1,230 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}
-    <title>Home | Creativia</title>
+<title>Home | Creativia</title>
 {% endblock %}
 {% block content %}
-<!-- <section class="container-fluid v-header d-flex flex-column justify-content-center align-items-center">
 
-                <div class="video-bgc">
-                    <video autoplay loop muted>
-                        <source src="/static/img/vid.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="header-overlay"></div>
-                <div class="header-content">
-                    <h1>Welcome to Creativia</h1>
-                    <p>We bring you closer to your technological solution</p>
-                    <a href="" class="btn btn-outline-primary call-2-action">Get Started</a>
-                </div>
-</section> -->
+
 
 <header class="header">
-
-    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-    <div class="overlay"></div>
-  
-    <!-- The HTML5 video element that will create the background video on the header -->
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="/static/img/02.png">
-      <source src="/static/img/video.mp4" type="video/mp4">
+    <!-- <div class="overlay"></div> -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="/static/img/CreativiaPlayVideoCut.mp4" type="video/mp4">
     </video>
-  
+
     <!-- The header content -->
     <div class="container h-100">
-      <div class="d-flex h-100 align-items-center">
-        <div class="w-100 text-white text-center">
-          <h1 class="display-3">Welcome to Creativia</h1>
-          <p class="lead mb-0">We bring you closer to your technological solutions by utilizing Aritificial Intelligence, Metaverse & Blockchain Technologoies</p>
-          <a href="#about" class="btn btn-outline-primary call-2-action">Get Started</a>
+      <div class="d-flex h-100 text-center align-items-end">
+        <div class="w-100 content">
+            <h1>Hi Creativia</h1>
+            <p class="text-light">We bring you closer to your technological solutions by utilizing Aritificial Intelligence, Metaverse & Blockchain Technologoies</p>
+          <a href="https://creativia-cog-120938.auth.ap-northeast-2.amazoncognito.com/signup?client_id=31c1ha8n9404gkchtfjgb8u5bq&response_type=token&scope=email+openid&redirect_uri=https://creativia.kr/" class="btn btn-outline-primary call-2-action">Get Started</a>
         </div>
       </div>
     </div>
   </header>
 
+
 <!-- About Us -->
+<section class="about text-center" id="about">
+    <div class="container-fluid bg-primary py-5 about-first my-title">
+        <div class="row mb-2">
+            <div class="col">
+                <h3 class="">About us</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <h2 class="">A virtuous cycle metaverse platform created by all participants</h2>
+                <p class="mt-5">Creativia is a metaverse platform jointly developed with the ICT Convergence
+                    Specialization Research Center of Kumoh National Institute of Technology and NSLAB Co., Ltd. It aims
+                    to become a virtuous cycle metaverse platform where participants can test and utilize their ideas
+                    and concebts through modularization.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container bg-primary py-4 about-second">
+        <div class="flex-item">
+            <div class="border border-5 rounded-circle pad">
+                <i class="fa-solid fa-lightbulb fa-3x mt-2"></i>
+                <p>Idea Modularization</p>
+            </div>
+            <p class="step-info pt-3">Start by modularizing your idea</p>
+        </div>
+        <div class="flex-item d-none d-sm-block">
+            <div class="arrow-right"></div>
+        </div>
+        <div class="flex-item">
+            <div class="border border-5 rounded-circle pad">
+                <i class="fa-solid fa-lightbulb fa-3x mt-2"></i>
+                <p class="">Test</p>
+            </div>
+            <p class="step-info pt-3">Test using the Creativia platform</p>
+        </div>
+        <div class="flex-item d-none d-sm-block">
+            <div class="arrow-right"></div>
+        </div>
+        <div class="flex-item" style=" margin-top: 1.1rem;">
+            <div class="border border-5 rounded-circle pad">
+                <i class="fa-solid fa-lightbulb fa-3x mt-2"></i>
+                <p>Application</p>
+            </div>
+            <p class="step-info pt-3">Build educational, research or industrial applications</p>
+        </div>
+    </div>
+</section>
+<section class="container-fluid" id="services">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 px-0">
+            <!-- Online Exhibition -->
+            <div class="row g-0">
+                <div class="col-12 col-md-6 business-area slideanim">
+                    <h2>Online Exhibition</h2>
+                    <p>Creativia offers users a state-of-the-art online exhibition platform, built to industry standard and fully equipped with the following technologies.</p>
+                    <div class="d-flex align-items-center border rounded mb-2 shadow-sm">
+                        <div class="flex-shrink-0">
+                            <img src="/static/img/temp.png" alt="..." width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>Realistic Graphics</h5>
+                            <p>Hyper-realistic graphics very much similar to reality.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border rounded mb-2 shadow-sm">
+                        <div class="flex-shrink-0">
+                            <img src="/static/img/temp.png" alt="..." width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>Spatial Audio</h5>
+                            <p>Synthetic sound by estimating the distance between user and sound source.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border rounded mb-2 shadow-sm">
+                        <div class="flex-shrink-0">
+                            <img src="/static/img/temp.png" alt="..." width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>Customizing</h5>
+                            <p>Make the platform yours by customizing the look, feel and design.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border rounded mb-2 shadow-sm">
+                        <div class="flex-shrink-0">
+                            <img src="/static/img/temp.png" alt="..." width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>Chat/Voice</h5>
+                            <p>Free communication enabled by built-in chat and voice call functionalities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 about-image">
+                </div>
+            </div>
+            <!-- Digital Twin -->
+            <div class="row g-0">
+                <div class="col-12 col-md-6 digital-image"></div>
+                <div class="col-12 col-md-6 business-area slideanim">
+                    <h2>Digital Twin</h2>
+                    <p>Utilizing C++ based Unreal Engine Blueprint, we provide a realitime monitoring system through data collection and signal processing, providing various services according to user purposes such as manufacturing, safety, and transportation.</p>
+                        <div class="row text-center">
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>Data Collection</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>Cloud Storage</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>Data Analysis</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>Monitoring System</h5>
+                            </div>
+                        </div>
+                    <hr class="hr my-5 center-star">
+                    <h2>Large pool of talents required for digital twin implementation.</h2>
+                    <p>The ICT Convergence Specialized Research Center of Kumoh University of Technology is working with master's and doctoral talents on digital twin implementation for industries such as IoT, Deep Leaming, 5G, Embeded System, Edge Computing, and 3D Modeling design.</p>
+                        <div class="row text-center">
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>IoT</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>Deep Learning</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>5G</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>Embedded Systems</h5>
+                            </div>
+                        </div>
+                    <!-- <div class="twin">
+                        <div class="twin-item">
+                            <img src="/static/img/temp.png" alt="..." width="100">
+                            <h5 class="text-center">IoT</h5>
+                        </div>
+                        <div class="twin-item">
+                            <img src="/static/img/temp.png" alt="..." width="100">
+                            <h5>Deep Learning</h5>
+                        </div>
+                        <div class="twin-item">
+                            <img src="/static/img/temp.png" alt="..." width="100">
+                            <h5 class="text-center">5G</h5>
+                        </div>
+                        <div class="twin-item">
+                            <img src="/static/img/temp.png" alt="..." width="100">
+                            <h5>Embedded Systems</h5>
+                        </div>
+                    </div> -->
+                </div>
 
+            </div>
+            <!-- Education Services -->
+            <div class="row g-0">
+                
+                <div class="col-12 col-md-6 business-area slideanim">
+                    <div class="py-5"></div>
+                    <h2>Education Service</h2>
+                    <p>We provide educational services necessary for metaverse production such as 3D modeling, blueprints, and C++ to enhance competency and provide basic education for digital twins according to various industries.</p>
+                        <div class="row text-center">
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>3D Modelling</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>Blueprint</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>C++</h5>
+                            </div>
+                            <div class="col col-sm-3">
+                                <img src="/static/img/temp.png" alt="..." width="100">
+                                <h5>Network</h5>
+                            </div>
+                        </div>
+                    <hr class="my-5">
+                    <div class="py-5"></div>
 
+                </div>
+                <div class="col-12 col-md-6 education-image"></div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</section>
 
-<section class="px-sm-5 py-1" id="about">
+<!-- <section class="px-sm-5 py-1" id="about">
     <div class="container-fluid mt-5 pt-sm-5">
         <div class="row text-center mb-5">
             <div class="col text-white">
@@ -58,21 +237,35 @@
                     <div class="card-body p-0">
                         <div class="row g-0">
                             <div class="col-sm-6 p-4 text-center">
-                                <p class="text-muted justify lh-lg">Creativia is an IT convergence firm. Using technological tools, we work together to design, build, and create the solution to your problem. We are available for hire in a wide range of disciplines for a variety of projects and jobs. Creativia specializes in innovative research that involves the building and development of smart energy grids, smart homes, smart factories, and fine tuning additive manufacturing processes. Our team incorporates operations, technology, and marketing skills, with which we ensure to assist clients in handling new projects. </p>
+                                <p class="text-muted justify lh-lg">Creativia is an IT convergence firm. Using
+                                    technological tools, we work together to design, build, and create the solution to
+                                    your problem. We are available for hire in a wide range of disciplines for a variety
+                                    of projects and jobs. Creativia specializes in innovative research that involves the
+                                    building and development of smart energy grids, smart homes, smart factories, and
+                                    fine tuning additive manufacturing processes. Our team incorporates operations,
+                                    technology, and marketing skills, with which we ensure to assist clients in handling
+                                    new projects. </p>
                                 <div class="d-sm-flex pt-3">
-                                    <span class="me-3 rounded-circle p-3 d-none d-md-block" style="width:80px;height:80px;"><i class="fa-solid fa-bullseye fa-3x"></i></span>
+                                    <span class="me-3 rounded-circle p-3 d-none d-md-block"
+                                        style="width:80px;height:80px;"><i
+                                            class="fa-solid fa-bullseye fa-3x"></i></span>
                                     <div class="ps-sm-4">
                                         <h5 class="text-capitalize">Our Goal</h5>
-                                        <p class="justify text-muted">We hope to be able to offer unique solutions to countries all over the globe. At all times, we are committed to exceeding the expectations of our clients by providing solutions that solve problems from the grass root up.</p>
-                                        <!-- <hr> -->
+                                        <p class="justify text-muted">We hope to be able to offer unique solutions to
+                                            countries all over the globe. At all times, we are committed to exceeding
+                                            the expectations of our clients by providing solutions that solve problems
+                                            from the grass root up.</p>
                                     </div>
                                 </div>
                                 <div class="d-sm-flex pt-3">
-                                    <span class="me-3 rounded-circle p-3 d-none d-md-block" style="width:80px;height:80px;"><i class="fas fa-brain fa-3x"></i></span>
+                                    <span class="me-3 rounded-circle p-3 d-none d-md-block"
+                                        style="width:80px;height:80px;"><i class="fas fa-brain fa-3x"></i></span>
                                     <div class="ps-sm-4">
                                         <h5 class="text-capitalize">Our Vision</h5>
-                                        <p class="justify text-muted">Our vision is to be a leading platform and center for next-generation research and development in AI and metaverse. We want to be judged as such by our clients, employees, shareholders, and even the communities we work with.</p>
-                                        <!-- <hr> -->
+                                        <p class="justify text-muted">Our vision is to be a leading platform and center
+                                            for next-generation research and development in AI and metaverse. We want to
+                                            be judged as such by our clients, employees, shareholders, and even the
+                                            communities we work with.</p>
                                     </div>
                                 </div>
                             </div>
@@ -83,136 +276,219 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- services -->
 
-<section id="services" class="py-5 mt-5 text-white parallax">
+<!-- <section id="services" class="py-5 mt-5 text-white parallax">
     <div class="container mt-5 pt-sm-5" style="background-color: rgba(0,0,0,0.8);">
         <div class="row text-center mb-5">
             <div class="col">
                 <h2 class="header-text pt-3">Services</h2>
                 <h3 class="red-color">Explore Our Awesome Services </h3>
                 <figure>
-                        <blockquote class="blockquote">
-                            <p>The strength of the team is each individual member. The strength of each member is the team </p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer">
-                            Phil Jackson
-                        </figcaption>
-                    </figure>
+                    <blockquote class="blockquote">
+                        <p>The strength of the team is each individual member. The strength of each member is the team
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Phil Jackson
+                    </figcaption>
+                </figure>
             </div>
         </div>
         <div class="row text-center slideanim">
-               <div class="col-sm-6 col-md-4">
-                    <span class="circle-in-icon"><i class="fas fa-people-carry fa-3x"></i></span>
-                    <h3>Technical Support</h3>
-                    <p class="justify">Over the past years of experience with different systems, we discovered a pattern. There are patterns in every problem sphere and across different industries with similar issues. Luckily, a similar pattern was discovered in the solutions that resolve these problems. These solutions are made up of tiny building blocks that help to realize the desired result. Our team is at the beck and call of any problem and is highly trained to handle every project.
-                        </p>
-                </div>
-               <div class="col-sm-6 col-md-4">
-                    <span class="circle-in-icon" style="width:80px;height:80px;"><i class="fas fa-handshake fa-3x"></i></span>
-                    <h3>Technology Exchange</h3>
-                    <p class="justify">Creativia holds expertise in conceptualizing, designing, and sourcing AI-based solutions for different industrial processes. At Creativia, we strongly believe that engineers are required to develop a sustainable and industrial society. Thus, we wish to empower the workforce of client companies using a people-centric technology exchange model. Feel free to reach out to us for your needs and we will endeavor to do our best in a cost-effective and timely manner. We provide solutions and training.
-                        
-                        </p>
-                </div>
+            <div class="col-sm-6 col-md-4">
+                <span class="circle-in-icon"><i class="fas fa-people-carry fa-3x"></i></span>
+                <h3>Technical Support</h3>
+                <p class="justify">Over the past years of experience with different systems, we discovered a pattern.
+                    There are patterns in every problem sphere and across different industries with similar issues.
+                    Luckily, a similar pattern was discovered in the solutions that resolve these problems. These
+                    solutions are made up of tiny building blocks that help to realize the desired result. Our team is
+                    at the beck and call of any problem and is highly trained to handle every project.
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <span class="circle-in-icon" style="width:80px;height:80px;"><i
+                        class="fas fa-handshake fa-3x"></i></span>
+                <h3>Technology Exchange</h3>
+                <p class="justify">Creativia holds expertise in conceptualizing, designing, and sourcing AI-based
+                    solutions for different industrial processes. At Creativia, we strongly believe that engineers are
+                    required to develop a sustainable and industrial society. Thus, we wish to empower the workforce of
+                    client companies using a people-centric technology exchange model. Feel free to reach out to us for
+                    your needs and we will endeavor to do our best in a cost-effective and timely manner. We provide
+                    solutions and training.
 
-                <div class="col-sm-6 col-md-4">
-                    <span class="circle-in-icon" style="width:80px;height:80px;"><i class="fas fa-brain fa-3x"></i></span>
-                    <h3>Human Resource</h3>
-                    
-                    <p class="justify">
-                        At the heart of the success of Creativia is our committed, skilled, and talented manpower. The team is unique for its insatiable desire to provide unique services in engineering and education. Group collaboration is something Creativia excels at, empowered by diverse expertise and shared initiatives. At Creativia, we have a number of industry and academic veterans who have a wide range of experience. We believe in innovation and strive to bring innovation into every project. </p>
+                </p>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <span class="circle-in-icon" style="width:80px;height:80px;"><i class="fas fa-brain fa-3x"></i></span>
+                <h3>Human Resource</h3>
+
+                <p class="justify">
+                    At the heart of the success of Creativia is our committed, skilled, and talented manpower. The team
+                    is unique for its insatiable desire to provide unique services in engineering and education. Group
+                    collaboration is something Creativia excels at, empowered by diverse expertise and shared
+                    initiatives. At Creativia, we have a number of industry and academic veterans who have a wide range
+                    of experience. We believe in innovation and strive to bring innovation into every project. </p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<!-- Technologies -->
+<section class="px-sm-5 pt-sm-5 pb-sm-3 bg-primary my-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 offset-sm-4">
+                <img src="/static/img/nsl.png" class="img-fluid" alt="">
+                <!-- <video src="/static/img/electro.mp4" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="img-fluid"></video> -->
+            </div>
+            <!-- <div class="col">
+                <h3>Technologies</h3>
+                <h2>Explore some of our other technologies</h2>
+                <p>Trust us with your technological needs because, with us you can never go wrong</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 slideanim">
+            
+        </div> -->
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <h2 class="mb-0 mt-4">Simply the best</h2>
+        </div>
+    </div>
+
+</section>
+
+<section class="container mt-5">
+    <div class="row rep-service">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center flex-wrap-reverse flex-md-nowrap">
+                <div class="card shadow-lg rounded border-0 me-md-2 bg-primary py-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Metaverse</h5>
+                            <p class="card-text">
+                                The Creativia platform is an open R&D metaverse platform. The platform is intended to be used in a
+                    variety of fields including research, education, and industries such as automobile, aviation, and
+                    manufacturing.
+                            </p>
+                    </div>
                 </div>
+                <div class="col-md-5 slideanim">
+                    <img src="/static/img/vr_img2.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12 pt-5">
+            
+            <div class="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
+                <div class="col-md-5 me-md-2 slideanim">
+                    <img src="/static/img/nft_img.png" class="img-fluid" />
+                </div>
+                <div class="card shadow-lg rounded border-0 bg-primary py-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Blockchain</h5>
+                            <p class="card-text">
+                                Creativia offers you a variety of blockchain applications like PureWallet for secure offline crypto
+                    transactions, NFT MarketPlace for NFT Minting, and trading platforms for organizations.
+                            </p>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 </section>
 
-<section class="py-5" style="background-color: #F2F2F2;">
+<!-- <section class="py-5" style="background-color: #F2F2F2;">
     <div class="container mt-5 pt-sm-5">
         <div class="row text-center mb-5">
             <div class="col">
-                <!-- <h2 class="header-text pt-3">Services</h2> -->
                 <h3 class="fs-1">Creativia Trilogy</h3>
             </div>
         </div>
         <div class="row text-center slideanim">
-               <div class="col-sm-6 col-md-4">
-                    <!-- <span class="circle-in-icon" style="width:80px;height:80px;"><i class="fa-solid fa-train-subway"></i></span> -->
-                    <img src="/static/img/ai.png" alt="" style="max-width: 220px;">
-                    <h3 class="py-3">Artificial Intelligence</h3>
-                    <p class="text-center lh-lg text-muted">
-                        We have and develop state-of-the-art AI models with a high level of performance. Using these models, Creativia offers high-end Smart services like smart factories, smart health, smart farming, etc.
-                    </p>
-                </div>
-               <div class="col-sm-6 col-md-4">
-                    <!-- <span class="circle-in-icon" style="width:80px;height:80px;"><i class="fas fa-handshake fa-3x"></i></span> -->
-                    <img src="/static/img/meta.png" alt="" style="max-width: 100px;" class="mt-5 pb-3">
-                    <h3 class="py-3">Metaverse</h3>
-                    <p class="text-center lh-lg text-muted">
-                        The Creativia platform is an open R&D metaverse platform. The platform is intended to be used in a variety of fields including research, education, and industries such as automobile, aviation, and manufacturing.
-                    </p>
-                </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="/static/img/ai.png" alt="" style="max-width: 220px;">
+                <h3 class="py-3">Artificial Intelligence</h3>
+                <p class="text-center lh-lg text-muted">
+                    We have and develop state-of-the-art AI models with a high level of performance. Using these models,
+                    Creativia offers high-end Smart services like smart factories, smart health, smart farming, etc.
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="/static/img/vr_img2.png" alt="" class="img-fluid mt-5 pb-3">
+                <h3 class="py-3">Metaverse</h3>
+                <p class="text-center lh-lg text-muted">
+                    The Creativia platform is an open R&D metaverse platform. The platform is intended to be used in a
+                    variety of fields including research, education, and industries such as automobile, aviation, and
+                    manufacturing.
+                </p>
+            </div>
 
-                <div class="col-sm-6 col-md-4">
-                    <!-- <span class="circle-in-icon" style="width:80px;height:80px;"><i class="fas fa-brain fa-3x"></i></span> -->
-                    <img src="/static/img/nft.png" alt="" style="max-width: 220px;">
-                    <h3 class="py-3">Blockchain</h3>
+            <div class="col-sm-6 col-md-4">
+                <img src="/static/img/nft.png" alt="" style="max-width: 220px;">
+                <h3 class="py-3">Blockchain</h3>
 
-                    <p class="text-center lh-lg text-muted">
-                        Creativia offers you a variety of blockchain applications like PureWallet for secure offline crypto transactions, NFT MarketPlace for NFT Minting, and trading platforms for organizations.
-                    </p>
-                </div>
-        </div>
-    </div>
-</section>
-
-<!-- Technologies -->
-
-<section id="tech" class="py-sm-5 mt-5 text-dark">
-    <div class="container mt-5 pt-sm-5">
-        <div class="row text-center mb-5">
-            <div class="col">
-                <h2 class="header-text">Technologies</h2>
-                <h3 class="red-color">Explore Our Amazing <span>Technologies</span></h3>
-                <p>Trust us with your technological needs because, with us you can never go wrong</p>
+                <p class="text-center lh-lg text-muted">
+                    Creativia offers you a variety of blockchain applications like PureWallet for secure offline crypto
+                    transactions, NFT MarketPlace for NFT Minting, and trading platforms for organizations.
+                </p>
             </div>
         </div>
-        <!-- <div class="row"><a href="" class="text-end pb-2">View More&raquo;</a></div> -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 slideanim">
-            {% for tech in techs %}
-                <div class="col">
-                    {% include 'partials/_technologies.html' %}
-                </div>
-            {% endfor %}
-        </div>
     </div>
-</section>
+</section> -->
+
+
+
+
 
 <!-- Events -->
 
-<section class="px-sm-5 py-5 mt-5 bg-dark">
-    <div id="events" class="container-fluid mt-5 pt-sm-5">
-        <div class="row text-center mb-5">
-            <div class="col text-white">
-                <h2 class="header-text">Upcoming Event</h2>
-                <h3>See what we have <span>coming up</span></h3>
-                <!-- <p>Trust us with your technological needs because, with us you can never go wrong</p> -->
-            </div>
+<div class="container px-sm-5 py-5 my-title">
+    <div class="row text-center">
+        <div class="col primary-color">
+            <h3>Past Events</h3>
+            <h2>See what we've been <i class="fa-solid fa-arrow-up"></i> to</h2>
+            <!-- <p>Trust us with your technological needs because, with us you can never go wrong</p> -->
         </div>
-        <div class="row justify-content-center slideanim">
-            <div class="col-xl-10">
+    </div>
+</div>
+<section class="mb-5">
+    <div id="events" class="container-fluid">
+        
+        <div class="row justify-content-center">
+            <div class="col-xl-12">
                 <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
                     <div class="card-body p-0">
                         <div class="row g-0">
-                            <div class="col-sm-6 d-none d-sm-block bg-image"></div>
-                            <div class="col-sm-6 p-4">
-                                <div class="h3 text-center red-color">Workshop on Metaverse and The Industry</div>
-                                <p class="text-muted justify">Metaverse refers to a digitally simulated environment that is connected to the physical environment. It is now trending both to the industry and academic stakeholders. Similarly, intelligent transportation has continued to attract attention in the quest for safety, traffic management and management of greenhouse fossil fuel emission. Although, metaverse is at the infant stage, many stakeholders believe that its acceptance will be a function of issues such as applicability to various sectors, supporting technologies, interoperability, and open platform for continuous content generation. This workshop is intended to accelerate research discussion and trigger collaboration. It will also witness the demonstration of the creativia metaverse platform. Africa and indeed Nigeria have the combined comparative advantage of population, land size and active users of various online platforms. It is therefore imperative that research into the applicability, technologies, acceptance, and possible challenges of metaverse platform deployment in Africa be conducted. Creativia and various institutions in Nigeria will be leading the research in this direction. </p>
-                                <p class="text-muted">The workshop will offer insights into the following thematic areas:
+                            <div class="col-sm-4 d-none d-sm-block bg-image"></div>
+                            <div class="col-sm-8 p-4">
+                                <div class="h3 text-center primary-color">Workshop on Metaverse and The Industry</div>
+                                <p class="text-muted event-text">Metaverse refers to a digitally simulated environment that
+                                    is connected to the physical environment. It is now trending both to the industry
+                                    and academic stakeholders. Similarly, intelligent transportation has continued to
+                                    attract attention in the quest for safety, traffic management and management of
+                                    greenhouse fossil fuel emission. Although, metaverse is at the infant stage, many
+                                    stakeholders believe that its acceptance will be a function of issues such as
+                                    applicability to various sectors, supporting technologies, interoperability, and
+                                    open platform for continuous content generation. This workshop is intended to
+                                    accelerate research discussion and trigger collaboration. It will also witness the
+                                    demonstration of the creativia metaverse platform. Africa and indeed Nigeria have
+                                    the combined comparative advantage of population, land size and active users of
+                                    various online platforms. It is therefore imperative that research into the
+                                    applicability, technologies, acceptance, and possible challenges of metaverse
+                                    platform deployment in Africa be conducted. Creativia and various institutions in
+                                    Nigeria will be leading the research in this direction. </p>
+                                <p class="text-muted event-text">The workshop offers insights into the following thematic
+                                    areas:
                                 </p>
-                                <ul class="text-start text-muted">
+                                <ul class="text-start text-muted event-text">
                                     <li>Introduction to The Metaverse.</li>
                                     <li>Background on Metaverse and Research Prospects in AI.</li>
                                     <li>“Pure Wallet”: An offline approach to Blockchain transaction.</li>
@@ -221,23 +497,19 @@
                                     <li>Metaverse Applicability to Manufacturing.</li>
                                     <li>Metaverse Applicability to Transportation.</li>
                                 </ul>
-                                <ul class="list-unstyled text-start d-md-none style-icons-index">
-                                    <li class="mb-2">
-                                        <i class="fa-solid fa-location-pin fa-2x"></i><span class="ms-2">Online</span>
-                                    </li>
-                                    <li class="mb-2"><i class="fa-solid fa-calendar-days fa-2x"></i> <span class="ms-2">May 25 - 26, 2022</span></li>
-                                    <li class="mb-2"><i class="fa-solid fa-clock fa-2x"></i> <span class="ms-2">11:00 am (WAT) | 7:00 pm (KST)</span></li>
-                                </ul>
-                                <div class="d-none d-md-block style-icons-index">
-                                    <div class="d-flex justify-content-between">
-                                        <p><span><i class="fa-solid fa-location-pin fa-2x"></i></span> <span>Online</span></p>
-                                        <p><span><i class="fa-solid fa-calendar-days fa-2x"></i></span> May 25 - 26, 2022</p>
-                                        <p><span><i class="fa-solid fa-clock fa-2x"></i></span> 11:00 am (WAT) | 7:00 pm (KST)</p>
-                                    </div>
+                                <div>
+                                    <p class="event-text"><i class="fa-solid fa-calendar-days fa-2x"></i> May 25 - 26, 2022</p>
                                 </div>
-                                
+                                <!-- <div class="d-none d-md-block style-icons-index">
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div> -->
+
                                 <div class="text-center">
-                                    <a href="{% url 'events:event' %}" class="btn btn-outline-primary call-2-action">Register</a>
+                                    <!-- <a href="{% url 'events:event' %}" -->
+                                        <a href="https://www.youtube.com/channel/UCdO-hI6Jyd_sHUvb2Q1vu8A/featured" target="_blank"
+                                        class="btn btn-outline-primary call-2-action">Watch video</a>
                                 </div>
                                 <!-- <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#eventform">Register</button> -->
                             </div>
@@ -250,13 +522,25 @@
 </section>
 
 
+
+<section class="container-fluid contact bg-primary my-title" id="contact">
+    <div class="row p-5">
+        <div class="col- text-center">
+            <h3>contact us </h3>
+            <h2>Want to learn how Creativia brings you <br> closer to your technological solutions?
+            </h2>
+            <a href="{% url 'contact:contact' %}" class="btn btn-outline-primary call-2-action">Contact us</a>
+        </div>
+    </div>
+</section>
 <!-- Partners -->
 
-<section class="container mt-5 pb-4">
+<!-- Contact Form -->
+<section class="container mt-5 pb-4 my-title">
     <div class="row text-center mb-5">
-        <div class="col text-dark">
-            <h2 class="header-text">Partners</h2>
-            <h3 class="fs-2">Creativia Works Only With The Best Partners</h3>
+        <div class="col primary-color">
+            <h3 class="">Partners</h3>
+            <h2 class="fs-2">Creativia works only with the industry's best partners</h2>
             <!-- <p>Trust us with your technological needs because, with us you can never go wrong</p> -->
         </div>
     </div>
@@ -416,15 +700,7 @@
     </div>
 </section> -->
 
-<section class="container-fluid contact bg-dark" id="contact">
-    <div class="row p-5">
-        <div class="col- text-center">
-            <h2 class="header-text">contact us </h2>
-            <h3 class="text-white">Want to learn how Creativia brings you <br> closer to your technological solutions? </h3>
-            <a href="{% url 'contact:contact' %}" class="btn btn-outline-primary call-2-action">Contact us</a>
-        </div>
-    </div>
-</section>
+
 
 
 

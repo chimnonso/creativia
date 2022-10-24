@@ -1,8 +1,8 @@
 {% load static %}
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
   <div class="container">
     <a class="navbar-brand" href="{% url 'index' %}">
-        <img src="/static/img/logo_l.png" alt="" width="200" height="40">
+        <img src="/static/img/new_logo.png" alt="" width="200" height="50">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,17 +10,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+          <a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
         </li>
         <!-- <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'technology:technologies' %}">Technologies</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'events:event' %}">Events</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        
     
         <!-- <li class="nav-item">
           <a class="nav-link" href="#review">Reviews</a>
