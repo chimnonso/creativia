@@ -136,7 +136,7 @@ header {
   
   @media (pointer: coarse) and (hover: none) {
     header {
-      background: url('/static/img/dt.png') black no-repeat center center scroll;
+      background: url("/static/img/dt.f3cb4f17f243.png") black no-repeat center center scroll;
     }
   
     header video {
@@ -292,21 +292,21 @@ input, select, textarea {
 
 
 .bg-image {
-    background-image: url('/static/img/meta_trans.png');
+    background-image: url("/static/img/meta_trans.ce621bc57a32.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .about-image {
-    background-image: url('/static/img/exhi7.png');
+    background-image: url("/static/img/exhi7.3c37d9c57674.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .digital-image {
-    background-image: url('/static/img/dt.png');
+    background-image: url("/static/img/dt.f3cb4f17f243.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -314,7 +314,7 @@ input, select, textarea {
 
 
 .education-image {
-    background-image: url('/static/img/edu.jpg');
+    background-image: url("/static/img/edu.c9e61ef2434f.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -379,7 +379,7 @@ input, select, textarea {
 }
 
 .event-header {
-    background-image: url('/static/img/meta_trans.png');
+    background-image: url("/static/img/meta_trans.ce621bc57a32.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
