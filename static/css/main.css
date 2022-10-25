@@ -150,7 +150,7 @@ header {
 }
 
 .header h1 {
-    color: #6D87D6;
+    color: #BF3288;
     font-weight: 900;
     font-size: 4rem;
 }
@@ -320,6 +320,9 @@ input, select, textarea {
     background-repeat: no-repeat;
 }
 
+#services i {
+    color: #BF3288;
+}
 
 
 
@@ -502,7 +505,7 @@ p.step-info {
 /* make responsive */
 
 .business-area > h2 {
-    color: #6D87D6;
+    color: #BF3288;
     font-weight: 900;
     font-size: 2.2rem;
 }
